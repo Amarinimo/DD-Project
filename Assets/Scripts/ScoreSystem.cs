@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 public class ScoreSystem : MonoBehaviour
 {
-    private int score;
+    private static int score;
     private int oldscore;
-    public void addScore()
+    public static void addScore()
     {
         score += 100;
     }
@@ -32,9 +32,4 @@ public class ScoreSystem : MonoBehaviour
             oldscore = score;
         }
 	}
-
-    private void FixedUpdate()
-    {
-        if (Input.GetButtonDown("Jump")) score += 100;
-    }
 }

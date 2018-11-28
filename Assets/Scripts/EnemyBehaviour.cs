@@ -18,6 +18,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (hitpoints == 0)
         {
             Destroy(enemy);
+            ScoreSystem.addScore();
         }
     }
 }
